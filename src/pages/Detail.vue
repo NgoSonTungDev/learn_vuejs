@@ -2,10 +2,15 @@
   <h1>Detail</h1>
 </template>
 
-<script>
-export default {
-  name: "Detail",
-};
+<script setup>
+import { useRouter, useRoute } from "vue-router";
+
+const route = useRoute();
+
+console.log(route.params);
 </script>
+
+
+
 
 

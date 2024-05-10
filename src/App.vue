@@ -1,19 +1,19 @@
 <script setup>
 import { ref } from "vue";
-import HelloWorld from "./components/Navbar.vue";
+import Navbar from "./components/Navbar.vue";
+import { RouterView } from "vue-router";
 
- const message = ref(""); 
-
-  const logMessage = () => {
-    console.log(message.value); 
-  };
+const message = ref("");
 </script>
 
 <template>
   <div>
-    <p>Message is: {{ message }}</p>
+    <Navbar />
+    <!-- <p>Message is: {{ message }}</p>
     <input v-model="message" placeholder="edit me" />
-    <button @click="logMessage">Log Message</button>
+    <button @click="logMessage">Log Message</button> -->
+
+    <RouterView />
   </div>
 </template>
 
